@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% 200%;
+    animation: gradientShift 1s linear infinite;
+}
+
+#namaDesa {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 1s;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.section-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.image-frame-lg {
+    border: 5px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 100%;
+}
+
+.image-frame-lg img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #004d40;
+}
+
+h3 {
+    margin-top: 2rem;
+    color: #004d40;
+    font-size: 1.5rem;
+}
+
+.organisasi-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.organisasi-container.five-items {
+    gap: 1rem;
+}
+
+.organisasi-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.jabatan-item {
+    text-align: center;
+    width: 250px;
+}
+
+.organisasi-container.five-items .jabatan-item {
+    width: 180px;
+}
+
+.image-upload-frame {
+    border: 3px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.image-upload-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.berita-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.berita-image-frame {
+    border: 3px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 100%;
+    max-width: 800px;
+}
+
+.berita-image-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+textarea#beritaText {
+    width: 100%;
+    max-width: 800px;
+    height: 150px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 3rem 0;
+}
+
+.rencana-kerja-section {
+    margin-bottom: 3rem;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #004d40;
+    color: white;
+    font-weight: bold;
+}
+
+td[contenteditable="true"] {
+    background-color: #f9f9f9;
+}
+
+td[contenteditable="true"]:focus {
+    outline: 2px solid #007bff;
+    background-color: #eaf6ff;
+}
+
+@media (max-width: 768px) {
+    #namaDesa {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .organisasi-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .organisasi-container.five-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .jabatan-item {
+        width: 150px;
+    }
+    .organisasi-container.five-items .jabatan-item {
+        width: 45%;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemerintah Desa Ongka Trimuspasari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="namaDesa">PEMERINTAH DESA ONGKA TRIMUSPASARI</h1>
+    </header>
+
+    <main>
+        <div class="section-container">
+            <div class="image-frame-lg">
+                <img src="https://via.placeholder.com/1000x400?text=Kantor+Desa+Ongka+Trimuspasari" alt="Kantor Desa Ongka Trimuspasari" id="kantorDesaImg">
+            </div>
+            <div class="social-links">
+                <a href="https://web.facebook.com/profile.php?id=61579191993151" target="_blank">Facebook</a>
+                <a href="https://x.com/trimuspasari013" target="_blank">Twitter</a>
+                <a href="mailto:Ongkatrimuspasari2025@gmail.com">Email</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <section id="strukturOrganisasi">
+            <h2>Struktur Organisasi</h2>
+            <div class="organisasi-container">
+                <div class="jabatan-item">
+                    <div class="image-upload-frame">
+                        <img src="https://via.placeholder.com/300x400?text=Upload+Foto" alt="Foto BPD" onclick="document.getElementById('uploadBPD').click()">
+                        <input type="file" id="uploadBPD" accept="image/*" style="display: none;">
+                    </div>
+                    <span>BPD</span>
+                </div>
+                <div class="jabatan-item">
+                    <div class="image-upload-frame">
+                        <img src="https://via.placeholder.com/300x400?text=Upload+Foto" alt="Foto Kepala Desa" onclick="document.getElementById('uploadKades').click()">
+                        <input type="file" id="uploadKades" accept="image/*" style="display: none;">
+                    </div>
+                    <span>Kepala Desa</span>
+                </div>
+                <div class="jabatan-item">
+                    <div class="image-upload-frame">
+                        <img src="https://via.placeholder.com/300x400?text=Upload+Foto" alt="Foto LPMD" onclick="document.getElementById('uploadLPMD').click()">
+                        <input type="file" id="uploadLPMD" accept="image/*" style="display: none;">
+                    </div>
+                    <span>LPMD</span>
+                </div>
+            </div>
+
+            <div class="organisasi-center">
+                <div class="jabatan-item">
+                    <div class="image-upload-frame">
+                        <img src="https://via.placeholder.com/300x400?text=Upload+Foto" alt="Foto Sekretaris Desa" onclick="document.getElementById('uploadSekdes').click()">
+                        <input type="file" id="uploadSekdes" accept="image/*" style="display: none;">
+                    </div>
+                    <span>Sekretaris Desa</span>
+                </div>
+            </div>
+
+            <div class="organisasi-container five-items">
+                <div class="jabatan-item">
+                    <div class="image-upload-frame">
+                        <img src="https://via.placeholder.com/200x250?text=Upload+Foto" alt="Foto Kasi Pemerintahan" onclick="document.getElementById('uploadKasiPemerintahan').click()">
+                        <input type="file" id="uploadKasiPemerintahan" accept="image/*" style="display: none;">
+                    </div>
+                    <span>Kasi Pemerintahan</span>
+                </div>
+                <div class="jabatan-item">
+                    <div class="image-upload-frame">
+                        <img src="https://via.placeholder.com/200x250?text=Upload+Foto" alt="Foto Kasi Kesejahteraan" onclick="document.getElementById('uploadKasiKesejahteraan').click()">
+                        <input type="file" id="uploadKasiKesejahteraan" accept="image/*" style="display: none;">
+                    </div>
+                    <span>Kasi Kesejahteraan</span>
+                </div>
+                <div class="jabatan-item">
+                    <div class="image-upload-frame">
+                        <img src="https://via.placeholder.com/200x250?text=Upload+Foto" alt="Foto Kaur Perencanaan" onclick="document.getElementById('uploadKaurPerencanaan').click()">
+                        <input type="file" id="uploadKaurPerencanaan" accept="image/*" style="display: none;">
+                    </div>
+                    <span>Kaur Perencanaan</span>
+                </div>
+                <div class="jabatan-item">
+                    <div class="image-upload-frame">
+                        <img src="https://via.placeholder.com/200x250?text=Upload+Foto" alt="Foto Kaur TU dan Umum" onclick="document.getElementById('uploadKaurTU').click()">
+                        <input type="file" id="uploadKaurTU" accept="image/*" style="display: none;">
+                    </div>
+                    <span>Kaur Tata Usaha dan Umum</span>
+                </div>
+                <div class="jabatan-item">
+                    <div class="image-upload-frame">
+                        <img src="https://via.placeholder.com/200x250?text=Upload+Foto" alt="Foto Kaur Keuangan" onclick="document.getElementById('uploadKaurKeuangan').click()">
+                        <input type="file" id="uploadKaurKeuangan" accept="image/*" style="display: none;">
+                    </div>
+                    <span>Kaur Keuangan</span>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="beritaDesa">
+            <h2>Berita Desa Hari Ini</h2>
+            <div class="berita-container">
+                <div class="berita-image-frame">
+                    <img src="https://via.placeholder.com/800x600?text=Upload+Foto+Berita" alt="Foto Berita Desa" onclick="document.getElementById('uploadBerita').click()">
+                    <input type="file" id="uploadBerita" accept="image/*" style="display: none;">
+                </div>
+                <textarea id="beritaText" placeholder="Masukkan berita di sini..." maxlength="600"></textarea>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="rencanaKerja">
+            <h2 id="rencanaKerjaTitle">Rencana Kerja Tahun Ini</h2>
+            
+            <div class="rencana-kerja-section">
+                <h3>BIDANG PENYELENGGARAAN PEMERINTAH DESA</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">Nomor</th>
+                                <th style="width: 50%;">Uraian</th>
+                                <th style="width: 20%;">Jumlah Anggaran</th>
+                                <th style="width: 25%;">Sumber Dana</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="rencana-kerja-section">
+                <h3>BIDANG PELAKSANAAN PEMBANGUNAN DESA</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">Nomor</th>
+                                <th style="width: 50%;">Uraian</th>
+                                <th style="width: 20%;">Jumlah Anggaran</th>
+                                <th style="width: 25%;">Sumber Dana</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="rencana-kerja-section">
+                <h3>BIDANG PEMBINAAN KEMASYARAKATAN</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">Nomor</th>
+                                <th style="width: 50%;">Uraian</th>
+                                <th style="width: 20%;">Jumlah Anggaran</th>
+                                <th style="width: 25%;">Sumber Dana</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="rencana-kerja-section">
+                <h3>BIDANG PEMBERDAYAAN MASYARAKAT</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">Nomor</th>
+                                <th style="width: 50%;">Uraian</th>
+                                <th style="width: 20%;">Jumlah Anggaran</th>
+                                <th style="width: 25%;">Sumber Dana</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="rencana-kerja-section">
+                <h3>BIDANG PENANGGULANGAN BENCANA, DARURAT DAN MENDESAK DESA</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">Nomor</th>
+                                <th style="width: 50%;">Uraian</th>
+                                <th style="width: 20%;">Jumlah Anggaran</th>
+                                <th style="width: 25%;">Sumber Dana</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
